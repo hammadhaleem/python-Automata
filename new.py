@@ -1,6 +1,4 @@
 #! /usr/bin/python
-
-
 def rec(prod,var,stack):
 	for k in var :	
 		stack.append(k)
@@ -10,7 +8,7 @@ def rec(prod,var,stack):
 		else:
 			h=1
 	return stack 
-		
+	
 def prod(var,pro):
 	prod= dict()
 	for i in var:
@@ -25,7 +23,6 @@ def print_production(pro):
 				print j
 			else:
 				print j,'|',
-
 productions = dict()
 terminals = []
 variables = []
@@ -64,11 +61,9 @@ print '\nvariables:'
 print variables
 print '\nProductions:'
 print_production(productions)
-prod2 = dict()
 print '\nNew Grammer:'
 stack=list()
 stack=rec(productions,variables[0],stack)
-
 ter=list()
 var=list()
 for i in stack:
