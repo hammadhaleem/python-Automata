@@ -1,7 +1,8 @@
 python-Automata
 ===============
 
-THis is the program for simplifing a CFG .This would be specific to CFG like 
+This is the program for simplifing a CFG .This would be specific to CFG like  or correcting that form of cfg , which contain 
+variables not producing terminals 
 
 Input 
 S->AB|C
